@@ -1,0 +1,16 @@
+.footer {
+  min-height: 30px;
+  background: rgb(199, 194, 135);
+  position: relative;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+}
+
+.footer span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 3px;
+  font-family: "Courier New", Courier, monospace;
+}
