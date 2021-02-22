@@ -45,19 +45,19 @@ class Search extends Component {
     console.log(this.state.order);
   };
 }
-// sortAscending = () => {
-//   const { filteredEmployees } = this.state;
-//   filteredEmployees.sort((a, b) => a - b);
-//   this.setState({ filteredEmployees });
-// };
-// sortDescending = () => {
-//   const { filteredEmployees } = this.state;
-//   filteredEmployees.sort((a, b) => a - b).reverse();
-//   this.setState({ filteredEmployees });
-// };
+class Search extends Component {}
+sortAscending = () => {
+  const { filteredEmployees } = this.state;
+  filteredEmployees.sort((a, b) => a - b);
+  this.setState({ filteredEmployees });
+};
+sortDescending = () => {
+  const { filteredEmployees } = this.state;
+  filteredEmployees.sort((a, b) => a - b).reverse();
+  this.setState({ filteredEmployees });
+};
 
 render();
-
 {
   return (
     <div>
