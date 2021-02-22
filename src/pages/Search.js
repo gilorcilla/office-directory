@@ -55,20 +55,23 @@ class Search extends Component {
 //   filteredEmployees.sort((a, b) => a - b).reverse();
 //   this.setState({ filteredEmployees });
 // };
+
 render();
-return (
-  <div>
-    <Container style={{ minHeight: "100vh" }}>
-      <h1 className="text-center" style={{ margin: "20px" }}>
-        Employee Directory
-      </h1>
-      <SearchForm handleInputChange={this.handleInputChange} />
-      <SearchResults
-        employees={this.state.filteredEmployees}
-        handleSort={this.handleSort}
-      />
-    </Container>
-  </div>
-);
+{
+  return (
+    <div>
+      <Container style={{ minHeight: "100vh" }}>
+        <h1 className="text-center" style={{ margin: "20px" }}>
+          Employee Directory
+        </h1>
+        <SearchForm handleInputChange={this.handleInputChange} />
+        <SearchResults
+          employees={this.state.filteredEmployees}
+          handleSort={this.handleSort}
+        />
+      </Container>
+    </div>
+  );
+}
 
 export default Search;
