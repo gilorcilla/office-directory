@@ -56,7 +56,7 @@ sortDescending = () => {
   filteredEmployees.sort((a, b) => a - b).reverse();
   this.setState({ filteredEmployees });
 };
-class Search extends Component {
+class search extends Component {
   render() {
     return (
       <div>
