@@ -45,7 +45,7 @@ class Search extends Component {
     console.log(this.state.order);
   };
 }
-class Search extends Component {}
+
 sortAscending = () => {
   const { filteredEmployees } = this.state;
   filteredEmployees.sort((a, b) => a - b);
@@ -56,23 +56,22 @@ sortDescending = () => {
   filteredEmployees.sort((a, b) => a - b).reverse();
   this.setState({ filteredEmployees });
 };
-
-render();
-{
-  return (
-    <div>
-      <Container style={{ minHeight: "100vh" }}>
-        <h1 className="text-center" style={{ margin: "20px" }}>
-          Employee Directory
-        </h1>
-        <SearchForm handleInputChange={this.handleInputChange} />
-        <SearchResults
-          employees={this.state.filteredEmployees}
-          handleSort={this.handleSort}
-        />
-      </Container>
-    </div>
-  );
+class Search extends Component {
+  render() {
+    return (
+      <div>
+        <Container style={{ minHeight: "100vh" }}>
+          <h1 className="text-center" style={{ margin: "20px" }}>
+            Employee Directory
+          </h1>
+          <SearchForm handleInputChange={this.handleInputChange} />
+          <SearchResults
+            employees={this.state.filteredEmployees}
+            handleSort={this.handleSort}
+          />
+        </Container>
+      </div>
+    );
+  }
 }
-
 export default Search;
