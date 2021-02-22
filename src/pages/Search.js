@@ -45,28 +45,30 @@ class Search extends Component {
     console.log(this.state.order);
   };
 }
-sortAscending = () => {
-  const { filteredEmployees } = this.state;
-  filteredEmployees.sort((a, b) => a - b);
-  this.setState({ filteredEmployees });
-};
-sortDescending = () => {
-  const { filteredEmployees } = this.state;
-  filteredEmployees.sort((a, b) => a - b).reverse();
-  this.setState({ filteredEmployees });
-};
+// sortAscending = () => {
+//   const { filteredEmployees } = this.state;
+//   filteredEmployees.sort((a, b) => a - b);
+//   this.setState({ filteredEmployees });
+// };
+// sortDescending = () => {
+//   const { filteredEmployees } = this.state;
+//   filteredEmployees.sort((a, b) => a - b).reverse();
+//   this.setState({ filteredEmployees });
+// };
 render();
-<div>
-  <Container style={{ minHeight: "100vh" }}>
-    <h1 className="text-center" style={{ margin: "20px" }}>
-      Employee Directory
-    </h1>
-    <SearchForm handleInputChange={this.handleInputChange} />
-    <SearchResults
-      employees={this.state.filteredEmployees}
-      handleSort={this.handleSort}
-    />
-  </Container>
-</div>;
+return (
+  <div>
+    <Container style={{ minHeight: "100vh" }}>
+      <h1 className="text-center" style={{ margin: "20px" }}>
+        Employee Directory
+      </h1>
+      <SearchForm handleInputChange={this.handleInputChange} />
+      <SearchResults
+        employees={this.state.filteredEmployees}
+        handleSort={this.handleSort}
+      />
+    </Container>
+  </div>
+);
 
 export default Search;
