@@ -46,17 +46,17 @@ class Search extends Component {
   };
 }
 
-sortAscending = () => {
-  const { filteredEmployees } = this.state;
-  filteredEmployees.sort((a, b) => a - b);
-  this.setState({ filteredEmployees });
-};
-sortDescending = () => {
-  const { filteredEmployees } = this.state;
-  filteredEmployees.sort((a, b) => a - b).reverse();
-  this.setState({ filteredEmployees });
-};
-class search extends Component {
+// sortAscending = () => {
+//   const { filteredEmployees } = this.state;
+//   filteredEmployees.sort((a, b) => a - b);
+//   this.setState({ filteredEmployees });
+// };
+// sortDescending = () => {
+//   const { filteredEmployees } = this.state;
+//   filteredEmployees.sort((a, b) => a - b).reverse();
+//   this.setState({ filteredEmployees });
+// };
+class Search extends Component {
   render() {
     return (
       <div>

@@ -11,7 +11,7 @@ function App() {
     <div>
       <Nav />
       <Wrapper>
-        <Search />
+        /* <Search></Search> */
       </Wrapper>
       <Footer />
     </div>
